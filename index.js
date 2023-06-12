@@ -20,8 +20,8 @@ app.use(express.json());
 // REST API routs
 //Get all bands
 app.get('/bands', (req, res) => {
-    // res = response
     // req = request
+    // res = response
 
     // Prepare and execute in one line
     const bands = db.prepare (`SELECT * FROM bands`).all();
